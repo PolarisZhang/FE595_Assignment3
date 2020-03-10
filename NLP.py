@@ -171,8 +171,7 @@ if __name__ == '__main__':
     text = ""
     neg_sent.write("10 Most Negative Companies" + "\n\n")
     for c in neg:
-        text = (text + "Name: " + c[0] + "\nPurpose: " + c[1]
-            + "\nSentiment Score: " + str(c[2]) + "\n\n")
+        text = (text + "Name: " + c[0] + "\nPurpose: " + c[1])
     neg_sent.write(text)
     neg_sent.close()
 
@@ -181,8 +180,7 @@ if __name__ == '__main__':
     pos_sent.write("10 Most Positive Companies" + "\n\n")
     text = ""
     for c in reversed(pos):
-        text = (text + "Name: " + c[0] + "\nPurpose: " + c[1]
-            + "\nSentiment Score: " + str(c[2]) + "\n\n" )
+        text = (text + "Name: " + c[0] + "\nPurpose: " + c[1])
     pos_sent.write(text)
     pos_sent.close()
 
